@@ -4,85 +4,100 @@
 
 <head>
 
-<!-- <meta charset="utf-8" /> -->
-<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
-<!-- <meta name="generator" content="pandoc" /> -->
+  <!-- <meta charset="utf-8" /> -->
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+  <!-- <meta name="generator" content="pandoc" /> -->
 
 
 
 
-<title>BSAD 234</title>
+  <title>BSAD 234</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+  <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+  <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+  <script src="site_libs/navigation-1.1/tabsets.js"></script>
+  <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+  <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+  <style type="text/css">
+    code {
+      white-space: pre;
+    }
+  </style>
+  <style type="text/css">
+    pre:not([class]) {
+      background-color: white;
+    }
+  </style>
+  <script type="text/javascript">
+    if (window.hljs) {
+      hljs.configure({
+        languages: []
+      });
+      hljs.initHighlightingOnLoad();
+      if (document.readyState && document.readyState === "complete") {
+        window.setTimeout(function() {
+          hljs.initHighlighting();
+        }, 0);
+      }
+    }
+  </script>
 
 
 
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-bottom: 40px;
-    padding-left: -40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
+  <style type="text/css">
+    /* padding for bootstrap navbar */
 
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-</style>
+    body {
+      padding-top: 0px;
+      padding-bottom: 40px;
+      padding-left: -40px;
+    }
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+    /* offset scroll position for anchor links (for fixed navbar)  */
+
+    .section h1 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+
+    .section h2 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+
+    .section h3 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+
+    .section h4 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+
+    .section h5 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+
+    .section h6 {
+      padding-top: 56px;
+      margin-top: -56px;
+    }
+  </style>
+
+  <style type="text/css">
+    .main-container {
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 
 
 
@@ -93,55 +108,58 @@ body {
 <body>
 
 
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
+  <script>
+    // manage active state of menu based on current page
+    $(document).ready(function() {
+      // active menu anchor
+      href = window.location.pathname
+      href = href.substr(href.lastIndexOf('/') + 1)
+      if (href === "")
+        href = "index.html";
+      var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+      // mark it active
+      menuAnchor.parent().addClass('active');
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
+      // if it's got a parent navbar menu mark it active as well
+      menuAnchor.closest('li.dropdown').addClass('active');
+    });
+  </script>
 
 
-<div class="container-fluid main-container">
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+  <div class="container-fluid main-container">
+    <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <!-- <span class="icon-bar"></span>
         <span class="icon-bar"></span> -->
       </button>
-      <a class="navbar-brand" href="index.html">BSAD 234</a>
+          <a class="navbar-brand" href="index.html">BSAD 234</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+            <li>
+              <a href="schedule.html">Schedule</a>
+            </li>
+
+            <li>
+              <a href="handouts.html">Handouts</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container -->
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+    <!--/.navbar -->
 
-        <li>
-          <a href="schedule.html">Schedule</a>
-        </li>
-
-<li>
-  <a href="handouts.html">Handouts</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
+    <div class="fluid-row" id="header">
 
 
 
@@ -150,8 +168,8 @@ $(document).ready(function () {
 
 
 
-<link rel="stylesheet" href="./tufte.css">
-<!-- <link rel="stylesheet" href="./latex.css"> -->
+      <link rel="stylesheet" href="./tufte.css">
+      <!-- <link rel="stylesheet" href="./latex.css"> -->
 
 
       <article>
@@ -162,87 +180,100 @@ $(document).ready(function () {
 
         <section>
 
-<p>This page outlines the class in a bit more detail, and will have links to handouts for each lesson posted as we proceed.</p>
+          <p>This page outlines the class in a bit more detail, and will have links to handouts for each lesson posted as we proceed.</p>
 
-<p>Each section of the course will have a short, open-everything-except-living-people exam following it. <label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes" class="margin-toggle"/><span class="sidenote">Think of these as mini midterms.</span>
+          <p>Each section of the course will have a short, open-everything-except-living-people exam following it. <label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes"
+              class="margin-toggle" /><span class="sidenote">Think of these as mini midterms.</span>
 
-          <h2 id="Lesson1">Lesson 1: What law is, where it comes from, how it works</h2>
+            <h2 id="Lesson1">Lesson 1: What law is, where it comes from, how it works</h2>
 
-          <p>In this section we'll cover "big picture" topics (the idea of law, sources of law, levels of authority), as well as particulars (how to read court cases, how citations work, etc).</p> <p>The first three chapters will give us the broad basics of the legal system.</p>
+            <p>In this section we'll cover "big picture" topics (the idea of law, sources of law, levels of authority), as well as particulars (how to read court cases, how citations work, etc).</p>
+            <p>The first three chapters will give us the broad basics of the legal system.</p>
 
-          <ul>
-            <li>Chapter 1: An introduction to the idea of law, how to read cases, and so on.</li>
-            <li>Chapter 2: Discusses how disputes are resolved (e.g., courts versus arbitration)</li>
-            <li>Chapter 3: The basics of civil procedure (what happens when you choose to resolve a dispute in court)</li>
+            <ul>
+              <li>Chapter 1: An introduction to the idea of law, how to read cases, and so on.</li>
+              <li>Chapter 2: Discusses how disputes are resolved (e.g., courts versus arbitration)</li>
+              <li>Chapter 3: The basics of civil procedure (what happens when you choose to resolve a dispute in court)</li>
 
-                      </ul>
+            </ul>
 
-                      <p>The next two chapters will probe the boundaries of law. If we leave behind traditional enforcement mechanisms, does law exist? Should it?</p>
+            <p>The next two chapters will probe the boundaries of law. If we leave behind traditional enforcement mechanisms, does law exist? Should it?</p>
 
-                      <ul>
+            <ul>
 
-            <li>Chapter 5: Law versus ethics</li>
-            <li>Chapter 24: International law</li>
-          </ul>
+              <li>Chapter 5: Law versus ethics</li>
+              <li>Chapter 24: International law</li>
+            </ul>
 
+            <h3>Handouts for this section</h3>
 
-
-
-  <h2 id="Lesson2">Lesson 2: Law stemming from the Constitution</h2>
-<p>This section will examine the law flowing from the Constitution: (1) constitutional law itself, particularly criminal procedure, (2) statutory interpretation through antitrust law, and (3) administrative law, particularly through environmental and employment law. The reading on the Constitution and statutory law is:</p>
-
-<ul>
-  <li>Chapter 4: The Constitution</li>
-  <li>Chapter 10: Criminal law</li>
-  <li>Chapter 46: Antitrust law</li>
-  </ul>
-<p>After that, we'll move to administrative law as applied to the environment and employment.<label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes" class="margin-toggle"/><span class="sidenote">We'll do a brief lecture on agency law, without reading.</span></p>
-  <ul>
-
-  <li>Chapter 43: Administrative law</li>
-  <li>Chapter 45: Environmental law</li>
-  <li>Chapter 34: Employment law part 1</li>
-  <li>Chapter 35: Employment law part 2</li>
-
-</ul>
+            <p><a href="Handout_01">Handout 01</a>
+              <p><a href="Handout_02">Handout 02</a>
+                <p><a href="Handout_03">Handout 03</a>
+                  <p><a href="Handout_04">Handout 04</a>
 
 
 
-  <h2 id="Lesson2">Lesson 3: Business organizations</h2>
-<p>As a very large special case of statutory law, we'll examine ways to protect yourself from liability through business organizations in this section. We'll study corporations, partnerships, LLCs, and securities regulation. We haven't included these sections in our book, so the reading will be TBA.<label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes" class="margin-toggle"/><span class="sidenote">For this small section, we will have a quiz rather than a test.</span></p>
+                    <h2 id="Lesson2">Lesson 2: Law stemming from the Constitution</h2>
+                    <p>This section will examine the law flowing from the Constitution: (1) constitutional law itself, particularly criminal procedure, (2) statutory interpretation through antitrust law, and (3) administrative law, particularly through environmental
+                      and employment law. The reading on the Constitution and statutory law is:</p>
+
+                    <ul>
+                      <li>Chapter 4: The Constitution</li>
+                      <li>Chapter 10: Criminal law</li>
+                      <li>Chapter 46: Antitrust law</li>
+                    </ul>
+                    <p>After that, we'll move to administrative law as applied to the environment and employment.<label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes"
+                        class="margin-toggle" /><span class="sidenote">We'll do a brief lecture on agency law, without reading.</span></p>
+                    <ul>
+
+                      <li>Chapter 43: Administrative law</li>
+                      <li>Chapter 45: Environmental law</li>
+                      <li>Chapter 34: Employment law part 1</li>
+                      <li>Chapter 35: Employment law part 2</li>
+
+                    </ul>
 
 
 
-<h2 id="Lesson4">Lesson 4: Common law part 1 (involuntary obligations)</h2>
-<p>In this section we'll study tort and property law, the common law obligations imposed involuntarily.</p>
-<ul>
-  <li>Chapter 5: Torts</li>
-  <li>Chapter 6: Strict liability torts</li>
-  <li>Chapter 48: Personal property</li>
-  <li>Chapter 49: Real property</li>
-
-  </ul>
-<p>After that, we'll move to administrative law as applied to the environment and employment.</p>
+                    <h2 id="Lesson2">Lesson 3: Business organizations</h2>
+                    <p>As a very large special case of statutory law, we'll examine ways to protect yourself from liability through business organizations in this section. We'll study corporations, partnerships, LLCs, and securities regulation. We haven't
+                      included these sections in our book, so the reading will be TBA.<label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes" class="margin-toggle"
+                      /><span class="sidenote">For this small section, we will have a quiz rather than a test.</span></p>
 
 
 
+                    <h2 id="Lesson4">Lesson 4: Common law part 1 (involuntary obligations)</h2>
+                    <p>In this section we'll study tort and property law, the common law obligations imposed involuntarily.</p>
+                    <ul>
+                      <li>Chapter 5: Torts</li>
+                      <li>Chapter 6: Strict liability torts</li>
+                      <li>Chapter 48: Personal property</li>
+                      <li>Chapter 49: Real property</li>
 
-<h2 id="Lesson5">Lesson 5: Common law part 2 (voluntary obligations)</h2>
-<p>The law of contracts. The reading is:</p>
+                    </ul>
+                    <p>After that, we'll move to administrative law as applied to the environment and employment.</p>
 
 
-<ul>
 
-<li>Chapters 11-19: The common law of contracts</li>
-<li>Chapter 23: Warranties</li>
-</ul>
 
-<p>and a little TBA reading on the UCC.</p>
+                    <h2 id="Lesson5">Lesson 5: Common law part 2 (voluntary obligations)</h2>
+                    <p>The law of contracts. The reading is:</p>
 
-</div>
+
+                    <ul>
+
+                      <li>Chapters 11-19: The common law of contracts</li>
+                      <li>Chapter 23: Warranties</li>
+                    </ul>
+
+                    <p>and a little TBA reading on the UCC.</p>
+
+    </div>
 
 
 
 
 </body>
+
 </html>
