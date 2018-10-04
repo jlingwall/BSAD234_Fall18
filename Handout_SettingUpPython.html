@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Setting Up Python</title>
+  <link rel="stylesheet" href="./tufte.css">
+  <link rel="stylesheet" href="./latex.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+
+  <article>
+    <h1>Getting Started With Python</h1>
+    <p class="subtitle">Faculty Technology Development, 2018</p>
+    <section>
+
+
+
+      <h2>Overview</h2>
+
+      <p>We need to install an interactive text editor, the software to actually run Python code, and a package to run the code from within the text editor. The steps that follow are for a Windows machine, although they are similar for a Mac. Let me know
+        if you run into problems following these steps!</p>
+
+      <h2>Installing the Atom text editor</h2>
+
+      <p>Atom is a free text editor with advanced capabilities. (I'm actually writing this handout in Atom, see the screenshot below.)
+      </p>
+
+      <img src="images/atom1.png" width="336" />
+
+      <ol>
+        <li>Go to <a href="https://atom.io">here</a> and click Download. It should automatically detect what kind of computer you're using. </li>
+        <li>Save the file to your Desktop (or wherever ....)</li>
+        <li>Double-click on the file to open the installer. A cute little animation will open that says "Atom is being installed. It will launch once it's done." It should open when it's done. </li>
+        <li>Click "Yes, Always" if it asks you whether it should be the default atom URL handler.</li>
+        <li>You can play around if you like, but now we need to get Python installed.</li>
+
+      </ol>
+
+      </p>
+
+
+
+
+
+      <h2>Installing Python</h2>
+
+      <p>Python is a programming language, so we need a way for your computer to run it. We're going to use Anaconda, which makes installing Python simple.
+
+        <ol>
+          <li>Go to <a href="https://www.anaconda.com/download/">here</a> and under "Python 3.7 version" click Download.</li>
+          <li>Save the file to your Desktop. It's a large file (631MB), so it may take a few minutes to download. (You don't need to give your email address to get a "cheat sheet" as will popup on the webpage after you download.)</li>
+
+          <li>Double-click on the file. Hit Next, I Agree, Next, Next for the destination folder, select both Advanced Options, and click Install.</li>
+          <li>A green bar will popup showing the installation progress. You can probably pause and go work on something else, as this will probably take more than a few minutes. </li>
+          <li>When it says Completed, hit Next, Skip, unselect both "learn more" boxes and click Finish.</li>
+
+        </ol>
+
+
+
+        <h2>Running Python from Atom</h2>
+
+        <p>Now we're going to get Atom to play nicely with Python!</p>
+
+        <ol>
+          <li>Go back to Atom, which should still be open on your computer.</li>
+          <li>In Atom, click on the tab labeled "Untitled." Type this in
+          </li> <pre># My first Python program
+  print('Hello, Truman!')
+</pre>
+          <li>Click Control-S to save the file. Just save it to your Desktop for now, call it "test.py".</li>
+          <li>Your code should now change colors as Atom recognizes it as a Python file. It will be pretty.</li>
+          <li>There should be a pane open that says "Get to know Atom." In that pane, click on "Install a Package" then "Open Installer".</li>
+          <li>In the Search Packages box, type in "Hydrogen."</li>
+          <li>Under Hydrogen 2.6.0, click Install. It will take a few minutes.</li>
+          <li>Now, click in the Windows search box at the bottom of the screen, and type in Command Prompt. Open the command prompt, and type the following in:</li>
+
+          <pre>python -m pip install ipykernel</pre>
+          <li>After that runs, type the following in the command prompt:</li>
+          <pre>python -m ipykernel install --user</pre>
+          <li>Close the command prompt.</li>
+          <li>Close Atom, then re-open it.</li>
+
+          <li>Once it's open, click back on your file "test.py", which will show up in a tab at the top of the editor.</li>
+          <li>Click on what you typed in, and hit Control-Enter.</li>
+          <li>The code should run and print "Hello, Truman!" off to the side.</li>
+          <li>On a new line, type "2+2" and hit Control-Enter. It should display "4" to the side. Now you can do math.</li>
+        </ol>
+
+        <h3>Congrats, now we're ready to code!</h3>
